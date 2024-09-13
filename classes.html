@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Macarons and cakes in Trinidad and Tobago, Desserts">
+<meta name="keywords" content="macarons, macaron fillings, desserts, French desserts, exotic fillings, best desserts">
+<meta name="author" content="Camille A">
+<title>Just Goodness Sweet Creations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/classes.css">
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<div class="w3-container w3-margin-left w3-margin-right" id="myNavbar">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="about.html">ABOUT US</a></li>
+  <li><a href="menu&pricing.html">MENU & PRICING</a></li>
+  <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+  <li><a href="faq.html">FAQ</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">MORE</a>
+        <div class="dropdown-content">
+    <a href="classes.html">Classes</a>
+    <a href="blog.html">Blog</a>
+  <li><a href="contactus.html">CONTACT US</a></li>
+        </div>
+</li>
+</ul>
+  </div>
+</div>
+  
+
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="color: white; font-family: Monotype Corsiva, sans-serif; font-size: 50px; text-align: center;">COMING SOON</h1>
+    <h3>Want to know when we start? Have you subscribed?</h3>
+     <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-pink">Subscribe</button>
+  </div>
+</div>
+
+<div class="w3-container">
+   <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-pink"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Subscribe to Our Newsletter</h2>
+      </header>
+      <form action="/action_page.php">
+  <div class="container">
+    <h4><b>Keep in the know when our classes and blog goes live! Also stay updated on our monthly/ seasonal specials and deals!.</b></h4>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> I agree to receive newsletter including promotional updates
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
+
+  </div>
+</div>
+          
+
+
+<!-- Footer -->
+<footer class="w3-center w3-pink w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <div class="w3-small w3-section">
+       <p>&copy; 2024 by Just Goodness Sweet Creations</p>
+</div>
+
+   <div style="position:relative; bottom:60px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-gray w3-hide-small">Back To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+</body>
+</html>

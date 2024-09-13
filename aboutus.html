@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Macarons and cakes in Trinidad and Tobago, Desserts">
+<meta name="keywords" content="macarons, macaron fillings, desserts, French desserts, exotic fillings, best desserts">
+<meta name="author" content="Camille A">
+<title>Just Goodness Sweet Creations</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: none;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: darkgray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #FF1493;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: gray;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a :hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+<div class="w3-container w3-margin-left w3-margin-right" id="myNavbar">
+<ul>
+  <li><a href="index.html">HOME</a></li>
+  <li><a href="about.html">ABOUT US</a></li>
+  <li><a href="menu&pricing.html">MENU & PRICING</a></li>
+  <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+  <li><a href="faq.html">FAQ</a></li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">MORE</a>
+        <div class="dropdown-content">
+    <a href="classes.html">Classes</a>
+    <a href="blog.html">Blog</a>
+  <li><a href="contactus.html">CONTACT US</a></li>
+        </div>
+</li>
+</ul>
+  </div>
+</div>
+<br>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="images/Bluemacs no name.jpg" alt="Macarons" width="1600" height="800">
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="images/donuts.jpg" class="w3-round w3-image w3-opacity-min" alt="Chocolate Donuts" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 style="color: #FF1493; font-family: Monotype Corsiva, sans-serif; font-size: 70px; text-align: center;">About Us</h1></br>
+      <h3 class="w3-center">Just Goodness Sweet Creations</h3>
+      <p class="w3-large">Once upon a time there was flour and sugar.... 
+        <br>
+
+What began as a hobby in 2019 has gradually blossomed into what is now known and loved as Just Goodness Sweet Creations. At Just Goodness, our aim is to provide the best quality macarons, cakes and other delectable desserts using only the finest, top tier ingredients. Our french macarons are especially known far and wide Trinidad and Tobago as the best.
+<br>
+We have had the privilege of providing our sweet treats for various celebrations such as birthdays, anniversaries, milestones, weddings and baby showers. At Just Goodness, you are guaranteed that each item is made with love.  
+As we continue to grow, we are humbled by and are extremly thankful for the unwavering support all the way! 
+
+      <p class="w3-large w3-text-grey w3-hide-medium">Here's to sweet adventures together!</p>
+    </div>
+  </div>
+  
+  <hr>
+
+ <!-- Footer -->
+<footer class="w3-center w3-pink w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <div class="w3-small w3-section">
+       <p>&copy; 2024 by Just Goodness Sweet Creations</p>
+</div>
+
+   <div style="position:relative; bottom:60px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-gray w3-hide-small">Back To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+  <script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
